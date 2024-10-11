@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import arcaeaData from "./arcaea.json";
+import Navigation from "./components/navigation";
+import "./assets/app.css";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <Navigation />
+            <header>
+                <div className='profile'>
+                    <div className='potentials'>{arcaeaData.potential}</div>
+                </div>
+                <div className='user-info'>
+                    <h2>{arcaeaData.username}</h2>
+                </div>
+            </header>
+            <section className='favorite-songs'>
+                <h2>Favorite Songs</h2>
+                <ul className='songlist'>
+                    {arcaeaData.favorite_songs.map((song) => (
+                        <li>
+                            <img src={song.jacket} />
+                            <span>{song.title}</span>
+                        </li>
+                    ))}
+                </ul>
+            </section>
+        </>
+    );
 }
 
 export default App;

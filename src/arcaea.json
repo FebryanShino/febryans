@@ -1,0 +1,18 @@
+{
+    "username": "FebryanS",
+    "potential": 10.82,
+    "favorite_songs": [
+        {
+            "title": "烈華RESONANCE",
+            "difficulty": 10.6,
+            "score": 922000,
+            "jacket": "https://static.wikia.nocookie.net/iowiro/images/8/84/REKKA_RESONANCE.jpg/revision/latest?cb=20230928074411"
+        }
+    ],
+    "scores": [
+        {
+            "title": "World Vanquisher",
+            "score": 955555
+        }
+    ]
+}

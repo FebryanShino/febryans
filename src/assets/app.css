@@ -1,0 +1,56 @@
+header {
+    min-height: 70svh;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile {
+    height: 20rem;
+    aspect-ratio: 1;
+    background-image: url("./nature\ bird\ eye.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    /* animation: rotateX 5s linear infinite; */
+    transition: transform 0.5s ease;
+}
+
+.profile:hover {
+    color: white;
+    transform: rotateY(180deg);
+}
+
+@keyframes rotateX {
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+
+.user-info {
+    font-size: 2rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section h2 {
+    align-self: center;
+}
+
+.songlist {
+    list-style: none;
+}
+
+.songlist li {
+    height: 10rem;
+}
+
+.songlist > li img {
+    height: 100%;
+    aspect-ratio: 1;
+}

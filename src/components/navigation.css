@@ -1,0 +1,11 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding-inline: 1rem;
+    color: white;
+    height: 3rem;
+    background-color: black;
+}
